@@ -1,0 +1,160 @@
+:root {
+  --clr-nav-bs: #000000;
+  --clr_theme: rgb(153, 1, 235);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 1.5rem;
+  }
+
+  .flex {
+    display: block;
+    // flex-wrap: wrap;
+  }
+
+  nav {
+    margin: 0;
+    padding-inline: 2rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 10px var(--clr-box-shadow);
+
+    .menu {
+      display: none;
+    }
+
+    .mobileMenu {
+      display: block;
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 1000;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .contact {
+      display: none;
+    }
+  }
+
+  .mobileslider {
+    // display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80vw;
+    // border-left: 1px solid white;
+    // border-radius: 0.5rem;
+    background-color: hsla(0, 0%, 4%, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px var(--clr-box-shadow);
+    z-index: 100;
+  }
+
+  section {
+    margin: 2rem 0;
+
+    .rowOne {
+      display: block;
+
+      .profile {
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        img {
+          height: 10rem;
+          width: max-content;
+        }
+
+        .text {
+          margin-top: 0rem;
+
+          h1 {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .credport {
+        .flex {
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 0.5rem;
+
+          .credentials {
+            text-align: center;
+
+            img {
+              margin: 0;
+              width: auto;
+            }
+
+            .flex {
+              text-align: justify;
+              display: flex;
+            }
+          }
+
+          .portfolios {
+            text-align: center;
+
+            img {
+              margin: 0;
+              width: 100%;
+            }
+
+            .flex {
+              display: flex;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+
+    .rowTwo {
+      display: block;
+
+      .services {
+        margin-bottom: 1rem;
+
+        .serviceIcons {
+          margin: 1rem 0 2rem 0;
+          display: flex;
+          justify-content: center;
+        }
+
+        .stuff {
+          display: flex;
+        }
+      }
+
+      .socials {
+        .socialIcons {
+          margin: 1rem 0 2rem 0;
+          display: flex;
+          justify-content: center;
+        }
+
+        .stuff {
+          display: flex;
+        }
+      }
+
+      .spotify {
+        margin: 1rem 0;
+
+        .stuff {
+          display: flex;
+        }
+      }
+    }
+  }
+}

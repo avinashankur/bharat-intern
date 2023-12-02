@@ -1,0 +1,127 @@
+:root {
+  --clr-nav-bs: #000000;
+  --clr_theme: rgb(153, 1, 235);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 1.5rem;
+  }
+  .flex {
+    display: block;
+  }
+  nav {
+    margin: 0;
+    padding-inline: 2rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 10px var(--clr-box-shadow);
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .mobileMenu {
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1000;
+  }
+  nav .mobileMenu:hover {
+    transform: scale(1.1);
+  }
+  nav .contact {
+    display: none;
+  }
+  .mobileslider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80vw;
+    background-color: hsla(0, 0%, 4%, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px var(--clr-box-shadow);
+    z-index: 100;
+  }
+  section {
+    margin: 2rem 0;
+  }
+  section .rowOne {
+    display: block;
+  }
+  section .rowOne .profile {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  section .rowOne .profile img {
+    height: 10rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .rowOne .profile .text {
+    margin-top: 0rem;
+  }
+  section .rowOne .profile .text h1 {
+    font-size: 1rem;
+  }
+  section .rowOne .credport .flex {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+  }
+  section .rowOne .credport .flex .credentials {
+    text-align: center;
+  }
+  section .rowOne .credport .flex .credentials img {
+    margin: 0;
+    width: auto;
+  }
+  section .rowOne .credport .flex .credentials .flex {
+    text-align: justify;
+    display: flex;
+  }
+  section .rowOne .credport .flex .portfolios {
+    text-align: center;
+  }
+  section .rowOne .credport .flex .portfolios img {
+    margin: 0;
+    width: 100%;
+  }
+  section .rowOne .credport .flex .portfolios .flex {
+    display: flex;
+    text-align: justify;
+  }
+  section .rowTwo {
+    display: block;
+  }
+  section .rowTwo .services {
+    margin-bottom: 1rem;
+  }
+  section .rowTwo .services .serviceIcons {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  section .rowTwo .services .stuff {
+    display: flex;
+  }
+  section .rowTwo .socials .socialIcons {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  section .rowTwo .socials .stuff {
+    display: flex;
+  }
+  section .rowTwo .spotify {
+    margin: 1rem 0;
+  }
+  section .rowTwo .spotify .stuff {
+    display: flex;
+  }
+}/*# sourceMappingURL=media.css.map */

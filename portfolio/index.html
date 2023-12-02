@@ -3,64 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/globals/global.css" />
+    <link rel="stylesheet" href="/css/home/home.css" />
+    <link rel="stylesheet" href="/css/media/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6abcc0c3ab.js"
       crossorigin="anonymous"
     ></script>
-    <title>Avinash | Portfolio</title>
+    <script src="script.js"></script>
+    <title>Statement</title>
   </head>
+
   <body>
-    <main>
-      <aside>
-        <a href="/" class="logo">AVI</a>
-        <div>
-          <a href="" title="Twitter">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="" title="Instagram">
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
-          <a href="" title="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="" title="Behance">
-            <i class="fa-brands fa-square-behance"></i>
-          </a>
-          <a href="" title="Medium">
-            <i class="fa-brands fa-medium"></i>
-          </a>
-        </div>
-      </aside>
+    <!-- -------------------------------------- nav --- -->
+    <nav class="">
+      <a href="#">
+        <h3 class="logo">AVINASH</h3>
+      </a>
+
+      <div class="menu">
+        <ul class="flex">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+        </ul>
+      </div>
+
+      <div class="dark-mode" onclick="myFunction()">
+        <span class=""><i class="fa-solid fa-sun" title="sun"></i></span>
+        <span class="active"
+          ><i class="fa-solid fa-moon" title="moon"></i
+        ></span>
+      </div>
+
+      <div class="mobileMenu"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <div class="mobileslider" id="slide"></div>
+    <!-------------------------------------------------- container -->
+    <div class="container">
       <section>
-        <nav>
-          <div class="main">
-            <a href="">Portfolio</a>
-            <a href="">About Me</a>
-            <a href="">Contact</a>
-          </div>
-          <div class="call">
-            <a href=""
-              >Schedule a Call
-
-              <i class="fa-solid fa-phone"></i>
-            </a>
-          </div>
-        </nav>
-
-        <article>
-            <div>
-                <p class="hi">Hi There,</p>
-                <h1>I'm Avinash</h1>
-                <p class="first-line">I am front-end developer during daytime</p>
-                <p class="second-line">& work with the batman during the nights.</p>
-                <button>Ask Me How</button>
+        <div class="rowOne">
+          <div class="profile box">
+            <!-- <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?cs=srgb&dl=pexels-mohamed-abdelghaffar-771742.jpg&fm=jpg" -->
+            <div class="text">
+              <p>A WEB DEVELOPER</p>
+              <h1><span>Avinash</span></h1>
+              <p>I am a Web Developer and designer.</p>
             </div>
-            <div class="image">
-              <img src="img.png" alt="Avinash">
+          </div>
+
+          <div class="credport">
+            <div class="space box">
+              <p behavior="" hspace="5%" width="100%" class="marq">
+                AVAILABLE FOR <span>FREELANCING</span>.
+              </p>
             </div>
-        </article>
+
+            <div class="flex">
+              <div class="credentials box">
+                <img
+                  src="https://i.pinimg.com/736x/15/50/72/15507247d5568d98a3132127589515a7.jpg"
+                  alt=""
+                />
+                <div class="flex">
+                  <div>
+                    <p class="white2">More About Me</p>
+                    <p>Credentials</p>
+                  </div>
+                  <a href="#" title="arrow" class="arrowRight"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="portfolios box">
+                <img
+                  src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png"
+                  alt=""
+                />
+                <div class="flex">
+                  <div>
+                    <p class="white2">Showcase</p>
+                    <p>Portfolios</p>
+                  </div>
+                  <a href="#" title="arrow" class="arrowRight"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rowTwo">
+          <div class="services box">
+            <div class="serviceIcons flex">
+              <i class="fa-brands fa-html5" title="HTML5"></i>
+              <i class="fa-brands fa-css3-alt" title="CSS"></i>
+              <i class="fa-brands fa-square-js" title="JavaScript"></i>
+              <i class="fa-brands fa-react" title="React"></i>
+              <i class="fa-solid fa-n" title="NextJS"></i>
+            </div>
+            <div class="stuff">
+              <div>
+                <p class="white2">Specialization</p>
+                <p>Services</p>
+              </div>
+              <a href="#" title="arrow" class="arrowRight"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="socials box">
+            <div class="socialIcons flex">
+              <a title="insta" href="instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a title="twitter" href="twitter.com"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a title="facebook" href="facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a title="github" href="github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a title="mail" href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="stuff flex">
+              <div>
+                <p class="white2">Stay With Me</p>
+                <p>Socials</p>
+              </div>
+              <a href="#" title="arrow" class="arrowRight"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="spotify box">
+            <div class="spotifyImg"></div>
+            <div class="stuff flex">
+              <div>
+                <p class="white2">Listen With Me</p>
+                <p>Spotify</p>
+              </div>
+              <a href="#" title="arrow" class="arrowRight"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
+    </div>
   </body>
 </html>
